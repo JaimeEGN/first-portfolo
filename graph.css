@@ -1,0 +1,64 @@
+main{
+	text-align: center;
+}
+
+#form-param {
+	padding: 20px;
+	display: flex;
+	width: 80%;
+}
+
+#form-param .container {
+    flex: 2;
+}
+#form-param .buttons {
+	flex: 1;
+}
+
+input {
+	padding: 9px;
+	margin: 6px;
+	width: 42%;
+}
+
+input:focus{
+	outline: 2px solid #77D6CE;
+}
+
+button{
+	border: none;
+	padding: 12px;
+	display: block;
+	margin: 7px;
+	border-radius: 3px;
+	background-color: #D4AF37;
+}
+
+button:first-child {
+	background-color: #fff;
+	color: #000
+}
+
+button:first-child:active{
+	background-color: #d4af37b0;
+}
+
+#grafico{
+	height: 70%;
+	width: 90%;
+	color: #D4AF37;
+}
+
+.description{
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 500px){
+	.main{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    left: -20px;
+}
+}

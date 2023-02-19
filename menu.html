@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script:wght@700&family=Montserrat:wght@300&family=Rajdhani&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/50f704412b.js" crossorigin="anonymous"></script>
+	<link rel="icon"  href="logo.png">
+	<title>Veller's House</title>
+</head>
+<body class="body">
+	<header class="header">
+			<div class="nameLine nameLine1"></div>
+			<div class="resName">Veller's House</div>
+			<div class="nameLine nameLine2"></div>
+	</header>
+	<nav class="nav">
+		<ul class="nav__ul">
+			<li class="ul__li"><a href="restaurant.html">Home</a></li>
+			<li class="ul__li"><a href="menu.html">Menu</a></li>
+			<li class="ul__li"><a href="aboutUs.html">AboutUs</a></li>
+		</ul>
+	</nav>
+	<main class="main">
+		<div class="menU-container">
+		<div class="menU menU2">
+			<h2 class="menUTitle">Main Menu</h2>
+			<img class="menUIMG" src="mainMenu.png">
+		</div>
+		<div class="menU menU1">
+			<h2 class="menUTitle">Main Menu + </h2>
+			<img class="menUIMG" src="mainMenu+.png">
+		</div>	
+		<div class="menU menU2 DessertsMenu">
+			<h2 class="menUTitle">Desserts</h2>
+			<img class="menUIMG menUDesserts" src="Desserts.png">
+		</div>
+			<div class="menU menU3">
+			<h2 class="menUTitle">Drinks</h2>
+			<img class="menUIMG" src="Drinks.png">
+		</div>
+		</div>
+	</main>
+<script>
+	window.addEventListener("load",()=>{
+		if (window.matchMedia("(min-width: 637px)").matches) {
+			setTimeout(()=>{
+				window.scrollTo({
+			  	top: 300,
+			 	behavior: 'smooth',
+				})
+			},1000)
+		}
+	})
+	const goMainPage = document.querySelector('.goHome');
+	goMainPage.addEventListener("click",()=>{
+		window.open("https://jaimeegn.github.io/restaurant.html", '_self')
+})
+</script>
+<script type="text/javascript" src="app.js"></script>
+<style type="text/css">
+
+@media screen and (max-width: 390px){
+	.ul__li{
+		margin: 0;
+	}
+	.ul__li a{
+		font-size: 15px;
+	}
+	.contrastSquare{
+			left: 35%;
+	}
+	.go-menu{
+		border-radius: 100%;
+		position: absolute;
+		left: 41vw;
+		top: 85vh;
+	}
+	.arrowDescription{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 670px){
+	.ul__li a{
+		font-size: 18px;
+	}
+	.resName{
+		font-size: 25px;
+	}
+	.giorgio{
+		font-size: 15vw;
+	}
+	.xpCursive{
+		font-size: 18vw;
+	}
+	.giorgio, .xpCursive{
+		position: relative;
+		top: -50px;
+		left: -30px;
+	}
+	.contrastSquare{
+		height: 48vw;
+		width: 55vw;
+		left: 32%;
+		z-index: 100;
+	}
+	.underline{
+		left: -30px;
+		top: -110px;
+	}
+}
+
+	*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	overflow-x: hidden;
+	position: relative;
+}
+
+.body{
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	background: url(https://e1.pxfuel.com/desktop-wallpaper/138/253/desktop-wallpaper-dark-light-room-backgrounds-1920x1080-for-your-mobile-tablet.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+.header{
+	position: fixed;
+	height: 80px;
+	width: 100vw;
+	background: #251b1b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: height 0.5s;
+	z-index: 200;
+}
+
+.logo{
+	height: 60%;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	top: 15%;
+	transition: height 0.5s;
+}
+
+.resName{
+	font-family: Cinzel;
+	font-size: 40px;
+	color: #C2DB3A;
+	transition: font-size 0.5s;
+}
+
+.nameLine{
+	height: 2px;
+	width: 100px;
+	background: #C2DB3A;
+	margin: 20px;
+	display: block;
+}
+.nav{
+	position: sticky;
+	width: 100%;
+	height: 60px;
+	background: #0009;
+	transition: top 0.5s;
+	z-index: 200;
+	top: 0px;
+}
+
+.nav__ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.nav__ul a{
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 20px;
+	transition: color 0.3s;
+}
+
+@media screen and (max-width: 390px){
+	.ul__li{
+		margin: 0;
+	}
+	.ul__li a{
+		font-size: 15px;
+	}
+	.contrastSquare{
+			left: 35%;
+	}
+	.go-menu{
+		border-radius: 100%;
+		position: absolute;
+		left: 41vw;
+		top: 85vh;
+	}
+	.arrowDescription{
+		display: none;
+	}
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.nav__ul a{
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 20px;
+	transition: color 0.3s;
+}
+
+@media screen and (max-width: 670px){
+	.ul__li a{
+		font-size: 18px;
+	}
+	.resName{
+		font-size: 25px;
+	}
+	.giorgio{
+		font-size: 15vw;
+	}
+	.xpCursive{
+		font-size: 18vw;
+	}
+	.giorgio, .xpCursive{
+		position: relative;
+		top: -50px;
+		left: -30px;
+	}
+	.contrastSquare{
+		height: 48vw;
+		width: 55vw;
+		left: 32%;
+		z-index: 100;
+	}
+	.underline{
+		left: -30px;
+		top: -110px;
+	}
+}
+
+@media screen and (max-width: 670px){
+	.ul__li a{
+		font-size: 18px;
+	}
+	.resName{
+		font-size: 25px;
+	}
+	.giorgio{
+		font-size: 15vw;
+	}
+	.xpCursive{
+		font-size: 18vw;
+	}
+	.giorgio, .xpCursive{
+		position: relative;
+		top: -50px;
+		left: -30px;
+	}
+	.contrastSquare{
+		height: 48vw;
+		width: 55vw;
+		left: 32%;
+		z-index: 100;
+	}
+	.underline{
+		left: -30px;
+		top: -110px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.header{
+		height: 60px;
+	}
+	.logo{
+		height: 70%;
+	}
+	.resName{
+		font-size: 30px;
+	}
+	.nameLine{
+		width: 50px;
+	}
+}
+
+
+
+.ul__li{
+	padding: 20px;
+	list-style: none;
+	margin: 0 20px;
+	transition: background 0.3s; 
+}
+
+.nav__ul a:hover{
+	color: #C2DB3A;
+}
+
+.main {
+    position: absolute;
+    top: 200px;
+}
+.menU {
+    height: 700px;
+    width: 400px;
+    text-align: center;
+}
+.menU:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+.menU:hover > img {
+    border: 2px solid #e6bf38;
+}
+.menUIMG {
+    border: 2px inset #50cecd;
+    height: 500px;
+    width: 390px;
+    border-radius: 6px;
+}
+
+.menUDesserts{
+	height: 400px;
+}
+
+@media screen and (min-width: 410px){
+	.menU:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+}
+
+@media screen and (max-width: 410px){
+	.menU:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+.menU {
+    height: 600px;
+    width: 400px;
+    text-align: center;
+}
+}
+
+.menUTitle {
+    margin: 20px;
+    font-size: 25px;
+    font-family: Montserrat;
+    color: #e6bf38;
+}
+a {
+    text-decoration: none;
+}
+.menU-container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: 5%;
+    right: 5%;
+}
+@media screen and (max-width: 410px) {
+    .menU {
+        width: 90vw;
+        border-radius: 6px;
+        justify-content: center;
+    }
+    .menUIMG {
+        width: 90vw;
+        height: 130vw;
+        border-radius: 6px;
+        margin-bottom: 50px;
+    }
+    .menUDesserts{
+	height: 90vw;
+}
+
+.DessertsMenu{
+	height: 450px;
+}
+}
+
+@media screen and (min-width: 1266px) {
+    .menU-container {
+        position: relative;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        left: 3%;
+        right: 5%;
+    }
+    .menU {
+        margin: 20px;
+        width: 90vw;
+        border-radius: 6px;
+        justify-content: center;
+    }
+}
+
+.menUTitle{
+	font-family: Raleway;
+}
+
+@media screen and (max-width: 390px){
+	.ul__li{
+		margin: 0;
+	}
+	.ul__li a{
+		font-size: 15px;
+	}
+	.contrastSquare{
+			left: 35%;
+	}
+	.go-menu{
+		border-radius: 100%;
+		position: absolute;
+		left: 41vw;
+		top: 85vh;
+	}
+	.arrowDescription{
+		display: none;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2db2c;
+  border-radius: 20px;
+}
+
+
+</style>
+</body>
+</html>

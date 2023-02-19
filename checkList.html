@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="checkList.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/50f704412b.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="check.png" />
+        <title>Check List</title>
+    </head>
+    <body class="body">
+        <div class="cm">
+            <div class="Delete">Delete</div>
+            <div class="Edit">Edit</div>
+        </div>
+        <div class="search">
+            <input type="text" class="SearchedTask" />
+            <div class="searchLine"></div>
+        </div>
+               <header class="header">
+            <ul class="header__ul">
+                <li class="ul__li"><i class="fa-solid fa-gear"></i></li>
+                <li class="ul__li HddGear"><i class="fa-solid fa-gear HGear"></i></li>
+                <li class="ul__li pages"><i class="fa-solid fa-magnifying-glass" title="Search task"></i></li>
+                <li class="ul__li pages2">
+                    <a class="why" href="why.html"><i class="fa-solid fa-clipboard-question" title="Why bother?"></i></a>
+                </li>
+                <li class="ul__li pages3">
+                    <a href="checkList.html"><i class="fa-solid fa-check-to-slot"></i></a>
+                </li>
+                <li class="ul__li pages4">
+                    <a href="diagram.html"><i class="fa-solid fa-chart-simple" title="Graphics"></i></a>
+                </li>
+                <div class="description-container">
+                    <div class="description1 description">Search</div>
+                    <div class="description2 description">Why bother?</div>
+                    <div class="description3 description">Tasks</div>
+                    <div class="description4 description graphics">Graphics</div>
+                </div>
+            </ul>
+        </header>
+        <main class="main"><div class="main-palceholder">Nothing around yet, let's start!</div></main>
+        <div class="fa-plus-container">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="date">
+            <div class="Ldate">Task's deadline</div>
+            <input type="number" class="day dateOption" max="30" placeholder="D" />
+            <select class="month dateOption" placeholder="M">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>Octuber</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <input type="number" class="year dateOption" max="2100" placeholder="Y" /><input type="number" class="hour dateOption" max="12" placeholder="hr" /><input type="number" class="min dateOption" max="2100" placeholder="m " />
+        </div>
+        <script type="text/javascript" src="home.js"></script>
+    </body>
+</html>

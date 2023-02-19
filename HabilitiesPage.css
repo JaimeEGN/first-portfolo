@@ -1,0 +1,25 @@
+.body{width: 100%;height: 100vh;}.main{width: 100%;height: 100%;position: absolute;top: 80px;transition: top 1s;}.nav__ul{position: relative;right: 1px;}.nav__ul-li{font-size: 25px;}.language-container{position: relative;display: flex;height: 220px;width: 100%;justify-content: space-around;top: 100px;}.language{height: 100%;flex-grow: 1;display: flex;justify-content: center;align-items: center;min-width: 13%;}.sql{height: 250px;position: relative;top: 250px;}.language img{width: 175px;height: 80%;align-self: baseline;transition: transform 0.4s;}.language img:hover{transform: translateY(-20px) scale(1.1);}.KpL-container{font-family: Roboto Mono;position: relative;top: 150px;width: 100%;display: flex;justify-content: center;font-size: 3em;color: #fab400;}.D-management{position: relative;top: 250px;}.bars-li{list-style: none;display: none;}li .fa-bars{display: none;}.openBars-container{display: none;position: absolute;}.header{transition: top 1s;top: -2000;}.logo{position: absolute;right: 85% !important;}@media screen and (max-width: 767px){li .fa-bars{display: block;}.openBars-container{position: absolute;display: block;font-size: 25px;margin: 20px;top: 0;}.header{position: absolute;top: -2000px;transition: top 1s;}.bars-li{padding: 0;display: block;position: absolute;right: -6px; top: -8px;font-size: 30px;}.nav{height: 100%;}.header{position: relative;height: 100%;width: 50%;}.nav__ul{display: flex;justify-content: center;align-content: center;flex-wrap: wrap;height: 100%;background: #01a0c8;}.nav__ul li{margin: 20px;margin-left: -8px;}.logo{position: absolute;border-radius: 10px;left: 40px !important;top: 30px;}.contact{position: static;left: 1%;}.language-container{height: 100%;flex-direction: column;justify-items: space-arround;margin-top: -100px;}.language img{max-height: 175px;min-height: 175px;}.sql{position: relative;top: 250px;height: 40%;}.KpL-container{margin-top: -50px;}}@media screen and (max-width: 819px){.contact{position: relative;right: -10px;}}@media screen and (max-width: 970px){.KpL-container{text-align: center;}}@media screen and (max-width: 786px) and (min-width: 767px){.logo{left: 45px !important;}}@media screen and (max-width: 363px){.KpL-container{font-size: 30px;}}
+
+@media screen and (max-width: 610px){
+	.KpL-container{
+		font-size: 35px;
+	}
+	.D-management{
+		top: 300px;
+	}
+	.gitTitle{
+		top: 250px;
+	}
+}
+
+@media screen and (max-width: 460px){
+	.KpL-container{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 381px){
+	.KpL-container{
+		font-size: 27px;
+	}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script:wght@400;700&family=Montserrat:wght@200&family=Pinyon+Script&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50f704412b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="galery.css">
+	<link rel="icon"  href="logo.ico">
+	<title>Your Galery</title>
+</head>
+<body class="body">
+	<div class="loader-container">
+		<div class="loader"></div>
+	</div>
+	     <div class="cm">
+            <div class="Delete">Delete</div>
+        </div>
+	<div class="galery-manager">
+		<div class="titleLine titleLine1"></div>
+		<h1 class="title">Your Galery</h1>
+		<div class="titleLine titleLine2"></div>
+		<div class="fileUpload-container">
+			<label class="custom-file-upload">
+			<input type="file" class="Img-reader">
+			<i class="fa-solid fa-plus"></i>
+		</label>
+		</div>
+	</div>
+	<div class="galery">
+		<h1 class="defaultText">Nothing around yet, lets start!</h1>
+	</div>	
+	<div class="modal-background">
+		<div class="x-container"><i class="fa-solid fa-xmark"></i></div>
+	</div>
+
+<script type="text/javascript">
+	window.onload = function(){
+	const loaderContainer = document.querySelector(".loader-container")
+	loaderContainer.style.display = "none"
+};
+</script>
+<script type="text/javascript" src="galery.js"></script>
+</body>
+</html>
